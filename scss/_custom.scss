@@ -15,3 +15,18 @@ h2:after {
   height: rem-calc(6);
   margin: 0 auto;
 }
+
+h3 {
+  color: $primary-color;
+}
+.room-panel {
+  @include panel(
+    $bg       :$silver,
+    $padding  :rem-calc(20),
+    $adjust   :false,
+    $border    :false
+  );
+   
+  text-transform: uppercase;  
+  color: $primary-color;  
+}
