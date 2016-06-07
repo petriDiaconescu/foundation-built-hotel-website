@@ -19,6 +19,8 @@ h2:after {
 h3 {
   color: $primary-color;
 }
+
+/*** Panel for Rooms **/
 .room-panel {
   @include panel(
     $bg       :$silver,
@@ -29,4 +31,15 @@ h3 {
    
   text-transform: uppercase;  
   color: $primary-color;  
+}
+
+/** Buttons **/
+.custom-button {
+  @include button(
+    $padding      :rem-calc(10),
+    $bg           :$secondary-color,
+    $radius       :true
+  );
+  font-size: rem-calc(16);  
+  border-radius: rem-calc(10)!important;
 }
