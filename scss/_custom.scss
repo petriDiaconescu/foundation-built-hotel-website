@@ -36,6 +36,12 @@ h3 {
         font-size: rem-calc(40);
       }
     }
+    
+    a:hover {
+      i {
+        color: $white;
+      }
+    }
   }
 }
 
