@@ -63,6 +63,25 @@ div.featured-image {
   }
 }
 
+/** Rooms Accordion **/
+.accordion {
+  .accordion-navigation {
+    @include accordion-navigation(
+      $bg                 :$primary-color,
+      $padding            :rem-calc(8),
+      $hover-bg           :$secondary-color,
+      $active-bg          :$secondary-color,
+      $font-color         :$white,
+      $font-size          :rem-calc(20)
+    );
+    text-transform: uppercase;  
+  }
+  
+  .content {
+    @include accordion-content;
+    text-transform: none;
+  }
+}
 
 footer {
   background-color: $primary-color;
