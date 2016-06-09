@@ -191,6 +191,42 @@ form {
     padding: rem-calc(30 20);
     margin-bottom: rem-calc(50);
   }
+  
+  .room-info {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    
+    .more-information {
+      background-color: rgba($primary-color, 0.8);
+      background-clip: content-box;
+      height: 95%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 1s ease;
+            
+      a {
+        font-size: rem-calc(24);
+        border: 1px solid $white;
+        width: 80%;
+        margin: 0 auto;
+        color: $white;
+        margin-top: rem-calc(120);
+        display: block;
+      }
+    }
+    
+    
+  }
+  
+  .room-info:hover {
+    .more-information {
+      opacity: 1;
+    }
+  }
 }
 @media #{$large-only} {}
 
